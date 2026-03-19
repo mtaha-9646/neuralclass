@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Space+Mono:wght@400;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  @apply bg-forest-950 text-cream-100;
+  font-family: 'Space Mono', monospace;
+}
+
+a {
+  @apply no-underline;
+}
+
+button {
+  @apply focus:outline-none;
+}
+
+/* Editorial typography */
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'DM Serif Display', serif;
+  font-weight: 400;
+  letter-spacing: -0.02em;
+}
+
+.font-display {
+  font-family: 'DM Serif Display', serif;
+}
+
+.font-mono {
+  font-family: 'Space Mono', monospace;
+}
+
+/* Brutal borders */
+.border-brutal {
+  @apply border-l-4 border-acid;
+}
+
+.border-brutal-thick {
+  @apply border-l-8 border-acid;
+}
+
+/* Scrollbar styling */
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-forest-900;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-acid-dark;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  @apply bg-acid;
+}
